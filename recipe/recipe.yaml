@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.7.1
+  version: 1.8.1
 
 package:
   name: livekit-agents
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/livekit-agents/livekit_agents-${{ version }}.tar.gz
-    sha256: 89bb7dc3d2b8b28671c846a80cec9265b699ddee805d790ef2d00a5e3129b8dd
+    sha256: 9319b4a7cf3891db4c1de9edd98fad4918919beadb2ceff5b3fbd34ae67384b5
   - url: https://raw.githubusercontent.com/livekit/agents/refs/tags/livekit-agents%40${{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     file_name: LICENSE
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - certifi >=2025.6.15
-    - livekit ==1.1.15
+    - livekit ==1.1.18
     - livekit-api >=1.2.0,<2
     - livekit-protocol >=1.1.21,<2
     - livekit-blingfire >=1.1,<2.dev0,<2
@@ -42,7 +42,7 @@ requirements:
     - colorama >=0.4.6
     - av >=14.0.0
     - numpy >=1.26.0
-    - pydantic >=2.0,<3
+    - pydantic >=2.5,<3
     - nest-asyncio >=1.6.0
     - opentelemetry-api >=1.39.0,<1.45
     - opentelemetry-sdk >=1.39.0,<1.45
